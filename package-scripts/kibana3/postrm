@@ -1,0 +1,9 @@
+#!/bin/bash
+#
+# Perform necessary kibana3 removal steps
+# after package is uninstalled.
+#
+
+echo "kibana3 has been uninstalled!"
+
+exit 0

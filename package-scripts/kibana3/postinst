@@ -1,0 +1,22 @@
+#!/bin/bash
+#
+# Perform necessary kibana3 setup steps
+# after package is installed.
+#
+
+PROGNAME=$(basename $0)
+
+function error_exit
+{
+  echo "${PROGNAME}: ${1:-"Unknown Error"}" 1>&2
+  exit 1
+}
+
+mkdir -p /var/log/kibana
+ln -s /opt/kibana3/sv/nginx /opt/kibana3/service
+
+echo "Thank you for installing kibana3!"
+echo "Start it's local daemon supervisor with -"
+echo "sudo /opt/kibana3/embedded/bin/runsvdir-start"
+
+exit 0

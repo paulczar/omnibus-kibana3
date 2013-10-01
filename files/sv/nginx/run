@@ -1,0 +1,4 @@
+#!/bin/sh
+exec 2>&1
+exec /opt/kibana3/embedded/sbin/nginx -c /opt/kibana3/embedded/conf/nginx.conf
+
