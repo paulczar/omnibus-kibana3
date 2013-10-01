@@ -3,6 +3,18 @@
 This project creates full-stack platform-specific packages for
 `kibana3`!
 
+Only tested on Centos-6 right now.
+
+* final result will startable via runit `sudo /opt/kibana3/embedded/bin/runsvdir-start`
+** need to work out how to call this from a cross-platform init script
+* nginx used to host kibana and proxy ES requests 
+** listens on both :80 and :443 with a self-signed cert
+** proxies kibana elasticsearch requests to localhost:9200
+** nginx config: `/opt/kibana3/embedded/conf/nginx.conf`
+
+
+
+
 ## Installation
 
 We'll assume you have Ruby 1.9+ and Bundler installed. First ensure all
