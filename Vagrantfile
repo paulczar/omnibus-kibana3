@@ -61,9 +61,7 @@ Vagrant.configure("2") do |config|
   config.berkshelf.enabled = true
   # The path to the Berksfile to use with Vagrant Berkshelf
   config.berkshelf.berksfile_path = "./Berksfile"
-  # Cachier plugin configuration
-  config.cache.auto_detect = true
-
+  
   config.ssh.forward_agent = true
 
   host_project_path = File.expand_path("..", __FILE__)

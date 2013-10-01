@@ -2,8 +2,8 @@
   "sources": {
     "omnibus": {
       "locked_version": "1.0.11",
-      "git": "git://github.com/lusis/omnibus.git",
-      "ref": "74660d42f4bceb35de912fc28d8031da7ce80038"
+      "git": "git://github.com/paulczar/omnibus.git",
+      "ref": "0b6a50ec847919b123a025227d2985d9adcdc127"
     },
     "apt": {
       "locked_version": "1.9.2"
